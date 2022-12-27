@@ -1,0 +1,79 @@
+.header {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid {
+    background-color: yellow;
+    margin-left: 32%;
+}
+
+.main__txt {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.trust__ad {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.car_-content,
+.sale__content,
+.hit__content {
+    font-size: 10px;
+}
+
+.right {
+    margin-right: 18%;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.idk {
+    display: flex;
+    flex-direction: column;
+}
+
+.defaultprice {
+    color: gray;
+    font-size: 10px;
+}
+
+.price {
+    color: red;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.queston {
+    background-color: red;
+    padding: 2px;
+    color: white;
+}
+
+.T-Stxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.T-Stxt__main {
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.T-Stxt__smalltxt {
+    font-size: 10px;
+}
+
+.T-S__vip {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
