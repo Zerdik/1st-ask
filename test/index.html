@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bruh</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" class="normalize" />
+    <link rel="stylesheet" href="../plugins/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="header">
+            <main>
+                <div class="gift" id="giffty">
+                    <img class="pngss" src="./img/download.png" alt="sdas" id="pngtime" />
+                </div>
+                <div class="main">
+                    <h3 class="pumpedupkicks">ФУТБОЛКИ С ПРИНТАМИ</h3>
+                    <div class="price">499 <sup>руб.</sup></div>
+                    <div class="queston">ПОЧЕМУ ТАК ДЁШЕВО?</div>
+                </div>
+
+                <div class="ads">
+                    <figure class="1stadd">
+                        <img src="./img/sale.png" class="sale" height="100" width="140" alt="sale" />
+                        <figcaption class="sstf">НИЗКИЕ ЦЕНЫ</figcaption>
+                    </figure>
+                    <figure class="2stadd">
+                        <img src="./img/gruzovik.png" class="car" height="100" width="110" alt="sale" />
+                        <figcaption class="dstf">Доставки по всей России</figcaption>
+                    </figure>
+                    <figure class="3stadd">
+                        <img src="./img/hit.png" class="hit" height="100" width="100" alt="sale" />
+                        <figcaption class="astf">Только хиты</figcaption>
+                    </figure>
+                </div>
+            </main>
+        </section>
+    </header>
+
+    <div class="container">
+        <section class="T-S">
+            <div class="T-S__title">
+                <h2 class="T-S__title__text">ФУТБОЛКИ</h2>
+                <p class="T-S__title__descr">100% хлопок</p>
+            </div>
+
+            <div class="gallery">
+                <ul class="T-S__list">
+                    <div class="gallery-arrow" onclick="changePicture()">
+                        <img src="./image/left.PNG" alt="">
+                    </div>
+                    <li class="T-S__list__item">
+                        <img src="./img/fubol.jpg" alt="" style="width: 500px; height: 600px;" id="pict-left" />
+                        <div class="T-S__list__item-text">
+                            <div class="text">
+                                <h5>Футболка</h5>
+                                <p class="T-S__list__item-price">499 P</p>
+                                <a href="#" class="T-S__btn"> Добавить в заказ? </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="T-S__list__item">
+                        <img src="./img/photo.png" alt="" style="width: 500px; height: 600px;" id="pict-right" />
+                        <div class="T-S__list__item-text">
+                            <div class="text">
+                                <h5>Футболка</h5>
+                                <p id="jsbut" class="T-S__list__item-price">499 P</p>
+                                <a id="jsbut2" href="#" class="T-S__btn" onmouseover="onEnter()">
+                                    Добавить в заказ?
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="gallery-arrow" onclick="changePictureRight()">
+                        <img src="./image/right.PNG" alt="">
+                    </div>
+                </ul>
+            </div>
+
+        </section>
+        <section class="size">
+            <div class="stxt-size">
+                <div class="stxt-size2">
+                    <h3 class="whichsize">Какой выбрать размер?</h3>
+                </div>
+                <div class="S-T__bottom">
+                    <div class="example">
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a id="Mymdl" href="#" class="addto2" onclick="ShowMod()">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a href="#" class="addto2" onclick="alert('Добавили заказ!')">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a href="#" class="addto2" onclick="alert('Добавили заказ!')">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a href="#" class="addto2" onclick="alert('Добавили заказ!')">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a href="#" class="addto2" onclick="alert('Добавили заказ!')">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emp__t-s">
+                            <a href="./img/photo2.png" class="lightzoom"><img src="./img/photo2.png" alt="Футболка" class="emp__pngs" /> </a>
+                            <div class="example__descr">
+                                <h4 class="name">Футболка</h4>
+                                <p class="price">499 P</p>
+                                <div class="addto">
+                                    <a href="#" class="addto2" onclick="alert('Добавили заказ!')">
+                                        Добавить в заказ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="adbottom">
+            <div class="ad__text">
+                <h3 class="ad__text__ros">РОЗЫГРЫЩ</h3>
+                <b class="ad__text__price"> 10 000 <sup>руб.</sup> </b>
+                <h3 class="ad__text__ad">
+                    СРЕДИ ОБЛАДАТЕЛЕЙ <br /> КУПОНОВ
+                </h3>
+                <p class="ad__text__bottom">
+                    Вечером 1 июня команда розыграет приз в прямом эфире
+                </p>
+            </div>
+            <div class="ad__img">
+                <img src="./img/money.jpg" alt="asd" class="ad__img__img" />
+            </div>
+        </section>
+        <section class="carting">
+            <div class="cart">
+                <h2 class="cart__text">ВАШ ЗАКАЗ</h2>
+                <div class="cart__global">
+                    <h4 class="cart__global__g">Корзина пуста</h4>
+                </div>
+                <p class="cart__is">В корзине пусто!</p>
+            </div>
+        </section>
+        <section class="section-form">
+            <h1 class="form__text">Оформление заказа</h1>
+            <div class="empty">
+                <form action="#" class="border-red">
+                    <label class="form__label">
+                        <h3 class="tablo">Имя</h3>
+                        <input id="name" placeholder="Имя" class="input" type="text" />
+                    </label><br />
+                    <label class="form__label">
+                        <h3 class="tablo">Фамилия</h3>
+                        <input id="last-name" placeholder="Фамилия" class="input" type="text" />
+                    </label><br />
+                    <label class="form__label">
+                        <h3 class="tablo">E-Mail</h3>
+                        <input id="email" placeholder="Введите почту" class="input" type="email" />
+                    </label><br />
+                    <label class="form__label">
+                        <h3 class="tablo">Телефон</h3>
+                        <input id="tel" placeholder="Номер телефона" class="input" type="tel" />
+                    </label>
+                    <br />
+                    <div class="pay" style="color: rgb(18, 212, 18)">Оплата онлайн</div>
+                    <hr />
+                    <button class="form__button" type="button" onclick="check()">Перейти к заказу</button>
+                    <span class="error"></span>
+                </form>
+            </div>
+            <div id="mymodal" class="modal">
+                <div class="modal-content">
+                    <span class="close"> &times; </span>
+                    <h5 class="st">Только сегодня</h5>
+                    <div class="nd">Текст<br />корзине</div>
+                    <h5 class="rd">Подвал</h5>
+                </div>
+            </div>
+            <button id="myBtn">Открыть модальный</button>
+        </section>
+        <section class="otzyv">
+            <div class="stars">
+                <img id="star_f_1" src="./img/star_2.png" alt="#" onmouseenter="star(1)" />
+                <img id="star_f_2" src="./img/star_2.png" alt="#" onmouseenter="star(2)" />
+                <img id="star_f_3" src="./img/star_2.png" alt="#" onmouseenter="star(3)" />
+                <img id="star_f_4" src="./img/star_2.png" alt="#" onmouseenter="star(4)" />
+                <img id="star_f_5" src="./img/star_2.png" alt="#" onmouseenter="star(5)" />
+            </div>
+        </section>
+        <div class="sup" onclick="MyFunc()">
+            <img class="pct" src="./img/images.png" alt="#" />
+        </div>
+    </div>
+    <a href="#" class="link">Hover this link</a>
+    <div id="text1" class="sssss"></div>
+    <script src="../script.js"></script>
+    <script src="../plugins/lightzoom.js"></script>
+    <script type="text/javascript">
+        jQuery('.lightzoom').lightzoom({
+            speed: 400,
+            viewTitle: true
+        });
+    </script>
+
+
+</body>
+
+</html>
