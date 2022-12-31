@@ -15,6 +15,23 @@
     opacity: 0;
 }
 
+.slide-switch {
+    text-align: center;
+}
+
+.dot {
+    background-color: black;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+
+.dot:hover {
+    background-color: orange;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -30,6 +47,7 @@ main {
 
 .pumpedupkicks {
     font-weight: bold;
+    border-color: black;
 }
 
 .price {
@@ -231,7 +249,7 @@ h5 {
     justify-content: space-between;
     display: flex;
     animation: anims infinite 2s
-        /* box-shadow: -2px 2px black; */
+    /* box-shadow: -2px 2px black; */
 }
 
 .ad__text {
@@ -351,7 +369,6 @@ h5 {
         top: -300px;
         opacity: 0;
     }
-
     to {
         top: 200px;
         opacity: 1;
@@ -395,23 +412,18 @@ h5 {
     0% {
         box-shadow: 0px -6px 5px red;
     }
-
     20% {
         box-shadow: 6px 0px 5px blue;
     }
-
     40% {
         box-shadow: 0px 6px 5px green;
     }
-
     60% {
         box-shadow: -6px 0px 5px red;
     }
-
     80% {
         box-shadow: 0px -6px 5px blue;
     }
-
     100% {
         box-shadow: 0px -6px 5px red;
     }
