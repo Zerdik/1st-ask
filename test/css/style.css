@@ -11,12 +11,61 @@
     flex-direction: column;
 }
 
+.slide-show {
+    max-width: 100%;
+    display: flex;
+}
+
+.slid {
+    width: 920px;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-text {
+    color: white;
+    font-size: 1.5em;
+    background-color: #c0c0c0;
+    align-self: flex-end;
+}
+
 .gift {
     opacity: 0;
 }
 
 .slide-switch {
     text-align: center;
+}
+
+.next,
+.prev {
+    width: 67px;
+    transition: 0.7s ease;
+    border-radius: 50%;
+    height: 67px;
+    align-self: center;
+}
+
+.next:hover,
+.prev:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .dot {
@@ -28,14 +77,9 @@
     height: 13px;
 }
 
-.dot:hover {
+.dot:hover,
+.dot-active {
     background-color: orange;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 main {
