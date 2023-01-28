@@ -77,11 +77,11 @@ function star(k) {
     }
 }
 
-function mshow() {
-    document.getElementById("giffty").style.opacity = 1
-}
+// function mshow() {
+//     document.getElementById("giffty").style.opacity = 1
+// }
 
-setTimeout(mshow, 15000)
+// setTimeout(mshow, 15000)
 
 function check() {
 
@@ -139,6 +139,8 @@ function changePicture() {
     goleftright.src = futbolkas[indexToR]
 }
 
+
+
 function changePictureRight() {
     let futbolkas = ['./img/fubol.jpg', './img/photo.png', './img/sss.jpg', './img/photo2.png']
     let right = document.getElementById("pict-right")
@@ -165,4 +167,72 @@ function changePictureRight() {
         indexToR = 0;
     }
     goleftright.src = futbolkas[indexToR]
+}
+
+var counter = 0;
+showSlides(0);
+
+function switchSlides(n) {
+    counter += n;
+    showSlides(counter);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName('slid')
+    let dots = document.getElementsByClassName('dot')
+    counter = n
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = "dot";
+    }
+    if (counter == slides.length) {
+        counter = 0
+    }
+    if (counter < 0) {
+        counter = slides.length - 1
+    }
+    slides[counter].style.display = "flex"
+    dots[counter].classList.add('dot-active')
+
+}
+
+const goods = {
+    "faisd": {
+        "name": "T-Shirt",
+        "image": "./img/photo2.png",
+        "price": 499,
+        // "pricevalue": rub,
+        "countincart": 0
+
+    }
+}
+
+let chart = {}
+
+document.addEventListener("click", event => {
+    let art = event.target.dataset['article'];
+    if (art !== undefined) {
+        if (!chart[art]) {
+            chart[art] = goods[art];
+            chart[art]["countincart"]++;
+        } else {
+            chart[art]["countincart"]++;
+        }
+        drawChart();
+    }
+})
+
+function drawChart() {
+    let out = "<div>";
+    let sum = 0;
+    for (let key in chart) {
+        out += `<img src="${chart[key]['image']}">`;
+        out += `<h5>${chart[key]['name']}</h5>`;
+        out += `<h5>${chart[key]['price']} рублей</h5>`;
+        out += `<h5>${chart[key]['countincart']}</h5>`;
+        sum += chart[key]['count'] * chart[key]['price'];
+    }
+    out += `<h2>Всего $</h2>`
+    out += "</div>"
+    document.getElementById("chart").innerHTML = out;
 }
