@@ -236,3 +236,13 @@ function drawChart() {
     out += "</div>"
     document.getElementById("chart").innerHTML = out;
 }
+
+
+
+var arr = [2, 5, 3, 6, 5, 6, 6, 8, 12, 2, 16, 224, 9]
+
+for (var a = 0; a < arr.length; a++) {
+    if ((arr[a] % 2) === 0) {
+        console.log(arr[a]);
+    }
+}
