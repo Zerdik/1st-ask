@@ -239,10 +239,70 @@ function drawChart() {
 
 
 
-var arr = [2, 5, 3, 6, 5, 6, 6, 8, 12, 2, 16, 224, 9]
+var arr = [2, 5, 3, 6, 5, 6, 6, 8, 12, 2, 16, 224, 7, 9, 100053405340, 9]
 
 for (var a = 0; a < arr.length; a++) {
     if ((arr[a] % 2) === 0) {
         console.log(arr[a]);
     }
 }
+
+
+function yie() {
+    let name = prompt("Введите имя");
+    let date = new Date()
+    let time = date.getHours()
+    while (true) {
+        // time = parseInt(prompt("Ввведитте ввремя"));
+        if (time < 0 || time > 23 || isNaN(time)) {
+            alert("Напишите нормальное время")
+        } else {
+            break
+        }
+    }
+    if (time >= 0 && time <= 4) {
+        alert("Gute nacht, mein " + name)
+    } else if (time >= 5 && time <= 12) {
+        alert('Guten morgen shtern, mein ' + name)
+    } else if (time >= 13 && time <= 17) {
+        alert("Guten tag, mein " + name)
+    } else {
+        alert("Guten abends, mein " + name)
+    }
+
+
+    let salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+    }
+
+
+    function sum() {
+        let sum = 0
+        for (let key in salaries) {
+            sum = sum + salaries[key]
+        }
+        console.log();
+
+
+
+        console.log(name, time);
+    }
+}
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+}
+
+
+function sum() {
+    let sum = 0
+    for (let key in salaries) {
+        sum = sum + salaries[key]
+    }
+    console.log(sum)
+}
+sum()
